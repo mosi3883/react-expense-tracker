@@ -27,10 +27,7 @@ function App() {
   const [expenses, setExpenses] = useState(dummyExpenses);
 
   const addExpenseHandler = (newExpense) => {
-    console.log(newExpense);
-    setExpenses((oldExpenses) => {
-      return [...oldExpenses, newExpense];
-    });
+    setExpenses((oldExpenses) => [newExpense, ...oldExpenses]);
   };
   return (
     <div>
