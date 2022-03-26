@@ -16,9 +16,14 @@
   font: inherit;
   padding: 0.5rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 2px solid #bae6fd;
   width: 20rem;
   max-width: 100%;
+}
+
+.new-expense__control input:focus {
+  outline: none;
+  border-bottom: 2px solid #0369a1;
 }
 
 .new-expense__actions {
